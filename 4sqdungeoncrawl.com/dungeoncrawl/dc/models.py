@@ -8,7 +8,7 @@ class Player(models.Model):
 
 class PlayerAttributes(models.Model):
     """The player's attributes. Statistics used in combat etc."""
-    player = models.ForiegnKey(Player)
+    player = models.ForeignKey(Player)
     cultured = models.IntegerField()
     fun = models.IntegerField()
     foodie = models.IntegerField()
@@ -37,8 +37,8 @@ class ItemType(models.Model):
 
 class PlayerInventory(models.Model):
     """The player's inventory of items."""
-    player = models.ForiegnKey(Player)
-    item_type = models.ForiegnKey(ItemType)
+    player = models.ForeignKey(Player)
+    item_type = models.ForeignKey(ItemType)
     count = models.IntegerField()
 
 class PlaceType(models.Model):
