@@ -38,6 +38,7 @@ class ItemType(models.Model):
     flavor_text = models.TextField()
     effect = models.TextField() # JSON encoding of effects
     value = models.IntegerField()
+    attribute_type = models.CharField(max_length=20, choices=ATTRIBUTE_CHOICES)
 
 class PlayerInventory(models.Model):
     """The player's inventory of items."""
@@ -54,6 +55,8 @@ class MonsterType(models.Model):
     flavor_text = models.TextField()
     min_level = models.IntegerField()
     max_level = models.IntegerField()
+    attribute_type = models.CharField(max_length=20, choices=ATTRIBUTE_CHOICES)
+
 
 class PlaceType(models.Model):
     """Categories for places.
