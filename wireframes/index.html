@@ -15,7 +15,7 @@
 	    <div class="treasure_box box">
 	        <h2>Treasure box</h2>
 	        <p>lorem ipsum awesome</p>
-		    <a href="#" class="button">close</a>
+		    <a href="#" class="button close_btn">close</a>
 	    </div>
 
 		<div class="box">
@@ -23,8 +23,20 @@
 		    <p>details</p>
 		    <a href="win.html" class="button">fight</a>
 		    <a href="runaway.html" class="button">runaway</a>
+		    <a href="askhelp.html" class="button">ask for help</a>
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+		<script>
+		    $( function () {
+
+		        $(".close_btn").click( function (event) {
+
+		           $(".treasure_box").hide("slow");
+		           event.preventDefault();
+		           event.stopPropagation();
+		        });
+		    });
+		</script
 	</body>
 </html>
