@@ -1,5 +1,22 @@
 from django.db import models
 
+ATTRIBUTE_CHOICES = [
+    ('culture', 'Cultured'),
+    ('fun', 'Fun'),
+    ('food', 'Foodie'),
+    ('hip', 'Hipster'),
+    ('shop', 'Shopaholic'),
+    ('fashion', 'Fashionista'),
+    ('travel', 'Jet Setter'),
+    ('mta', 'Commuter'),
+    ('outdoor', 'Outdoorsy'),
+    ('zen', 'Zen'),
+    ('party', 'Party Animal'),
+    ('bar', 'Alcoholic'),
+    ('smart', 'Smart'),
+    ('college', 'Collegiate'),
+]
+
 # Create your models here.
 class Player(models.Model):
     """Basic data universal to all players"""
@@ -9,22 +26,8 @@ class Player(models.Model):
 class PlayerAttributes(models.Model):
     """The player's attributes. Statistics used in combat etc."""
     player = models.ForeignKey(Player)
-    cultured = models.IntegerField()
-    fun = models.IntegerField()
-    foodie = models.IntegerField()
-    hipster = models.IntegerField()
-    shopaholic = models.IntegerField()
-    fashionista = models.IntegerField()
-    jet_setter = models.IntegerField()
-    commuter = models.IntegerField()
-    outdoorsy = models.IntegerField()
-    zen = models.IntegerField()
-    party_animal = models.IntegerField()
-    alcoholic = models.IntegerField()
-    hard_working = models.IntegerField()
-    healthy = models.IntegerField()
-    smart = models.IntegerField()
-    collegiate = models.IntegerField()
+    attribute_type = models.CharField(max_length=20, choices=ATTRIBUTE_CHOICES)
+    value = models.IntegerField()
 
 class ItemType(models.Model):
     """Categories for Items.
@@ -33,13 +36,24 @@ class ItemType(models.Model):
     commmon to any items of this type."""
     name = models.CharField(max_length=100)
     flavor_text = models.TextField()
-    effect = models.TextField() # JSON encoding of effects 
+    effect = models.TextField() # JSON encoding of effects
+    value = models.IntegerField()
 
 class PlayerInventory(models.Model):
     """The player's inventory of items."""
     player = models.ForeignKey(Player)
     item_type = models.ForeignKey(ItemType)
     count = models.IntegerField()
+
+class MonsterType(models.Model):
+    """Categories of monsters.
+
+    This stores all the information needed to create a specific monster
+    for a specific encounter."""
+    name = models.CharField(max_length=100)
+    flavor_text = models.TextField()
+    min_level = models.IntegerField()
+    max_level = models.IntegerField()
 
 class PlaceType(models.Model):
     """Categories for places.
