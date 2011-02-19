@@ -18,7 +18,9 @@
 ** Progression points for missions/goals (could be just more items)
 ** Other Players
 *** NPC
+**** Players who haven't joined the game yet
 *** PC
+**** Players who have joined the game
 ** Choices?
 ** Plot?
 ** Power ups
@@ -48,6 +50,8 @@
 *** Color
 *** Class/Progression points for different checkin profiles
 *** TODO Research 4sq's categorization
+** Mayoralship
+*** Bonus to mayors for checking into their places, or even letting them alter the settings of the venue within the game?
 ** Bidding mechancis?
 ** Avoid having 
 ** PLace for color
