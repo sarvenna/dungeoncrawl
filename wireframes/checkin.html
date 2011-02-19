@@ -4,11 +4,28 @@
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 		<meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="style.css" type="text/css">
+
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.css" />
+        <script src="http://code.jquery.com/jquery-1.5.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.js"></script>
+        <script>
+            $.mobile.ajaxLinksEnabled = false;
+        </script>
 	</head>
-	<body>
+
+<body>
+
+<div data-role="page" id="foo">
+
+	<div data-role="header">
 		<h1>DungeonCrawl</h1>
-		<a href="index.html" class="button">checkin</a>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-	</body>
+	</div>
+
+	<div data-role="content">
+	    <a href="index.html" data-role="button">Checkin</a>
+	</div>
+
+</div>
+
+</body>
 </html>

@@ -3,21 +3,32 @@
 	<head>
         <meta name="viewport" content="width=default-width; user-scalable=no" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <link rel="stylesheet" href="style.css" type="text/css">
+
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.css" />
+        <link rel="stylesheet" href="style.css" />
+
+        <script src="http://code.jquery.com/jquery-1.5.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.js"></script>
+        <script>
+            $.mobile.ajaxLinksEnabled = false;
+        </script>
 	</head>
 	<body>
-		<h1>DungeonCrawl</h1>
-		<ul>
-		    <li><a href="index.html">back</a></li>
-		</ul>
-	    <hr>
+	    <div data-role="page" id="foo">
 
-		<div class="box">
-		    <h2>Run away</h2>
-		    <p>details</p>
-		    <a class="button" href="index.html">back</a>
-		</div>
+            <div data-role="header" data-position="inline">
+            	<a href="index.html">Back</a>
+            	<h1>DungeonCrawl</h1>
+            </div>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+	        <div data-role="content">
+
+        		<div class="box">
+        		    <h2>Run away</h2>
+        		    <p>details</p>
+        		    <a class="button" href="index.html">back</a>
+        		</div>
+            </div>
+        </div>
 	</body>
 </html>
