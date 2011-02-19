@@ -3,30 +3,54 @@
 	<head>
         <meta name="viewport" content="width=default-width; user-scalable=no" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <link rel="stylesheet" href="style.css" type="text/css">
+
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.css" />
+        <link rel="stylesheet" href="style.css" />
+
+        <script src="http://code.jquery.com/jquery-1.5.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.js"></script>
+        <script>
+            $.mobile.ajaxLinksEnabled = false;
+        </script>
+
 	</head>
 	<body>
-		<h1>DungeonCrawl</h1>
-		<ul>
-		    <li><a href="checkin.html">New checkin</a></li>
-		    <li><a href="character.html">Character</a></li>
-		</ul>
-	    <hr>
-	    <div class="treasure_box box">
-	        <h2>Treasure box</h2>
-	        <p>lorem ipsum awesome</p>
-		    <a href="#" class="button close_btn">close</a>
-	    </div>
+	    <div data-role="page" id="foo">
 
-		<div class="box">
-		    <h2>Monster Johnny found you</h2>
-		    <p>details</p>
-		    <a href="win.html" class="button">fight</a>
-		    <a href="runaway.html" class="button">runaway</a>
-		    <a href="askhelp.html" class="button">ask for help</a>
-		</div>
+            <div data-role="header" data-position="inline">
+            	<a href="checkin.html">Checkin</a>
+            	<h1>DungeonCrawl</h1>
+            	<a href="character.html">Character</a>
+            </div>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+	        <div data-role="content">
+
+        	    <div class="treasure_box box">
+        	        <h2>Treasure box</h2>
+        	        <p>lorem ipsum awesome</p>
+                    <a href="#" data-role="button" data-icon="delete" class="button close_btn">close</a>
+        	    </div>
+
+        		<div class="box">
+        		    <h2>Monster Johnny found you</h2>
+        		    <p>details</p>
+
+                    <div data-role="controlgroup">
+                        <a href="win.html" data-role="button" class="button">fight</a>
+                        <a href="runaway.html" data-role="button" class="button">runaway</a>
+                        <a href="askhelp.html"  data-role="button" class="button">ask for help</a>
+                    </div>
+                </div>
+
+        		<div class="box">
+                    <h2>Players in this location</h2>
+                    <ul>
+                        <li>David the elf</li>
+                        <li>Victory Vampire</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 		<script>
 		    $( function () {
 

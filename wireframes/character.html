@@ -2,27 +2,41 @@
 <html>
 	<head>
         <meta name="viewport" content="width=default-width; user-scalable=no" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">	    	    
-        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.css" />
+        <link rel="stylesheet" href="style.css" />
+
+        <script src="http://code.jquery.com/jquery-1.5.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.js"></script>
+        <script>
+            $.mobile.ajaxLinksEnabled = false;
+        </script>
 	</head>
 	<body>
-		<h1>DungeonCrawl</h1>
-		<ul>
-		    <li><a href="index.html">back</a></li>
-		</ul>
-	    <hr>
-		<div class="box">
-		    <h2>Your character</h2>
-		    <p>details</p>
-		    <ul>
-		        <li>item 1</li>
-		        <li>item 2</li>
-		        <li>item 3</li>
-		        <li>item 4</li>
-		        <li>item 5</li>
-		    </ul>
-		</div>
+	    <div data-role="page" id="foo">
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>		
+            <div data-role="header" data-position="inline">
+            	<a href="index.html">Back</a>
+            	<h1>DungeonCrawl</h1>
+            </div>
+
+	        <div data-role="content">
+
+        		<div class="box">
+        		    <h2>Your character</h2>
+        		    <p>details</p>
+        		    <ul>
+        		        <li>item 1</li>
+        		        <li>item 2</li>
+        		        <li>item 3</li>
+        		        <li>item 4</li>
+        		        <li>item 5</li>
+        		    </ul>
+        		</div>
+            </div>
+        </div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
 	</body>
 </html>
