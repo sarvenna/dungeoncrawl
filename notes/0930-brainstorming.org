@@ -1,0 +1,65 @@
+* Munchkin As Idiom for this game
+* Check-in Mechanic
+** Find money
+** Find junk
+** Find items (stats/progression)
+*** This that you can wear
+*** Things that you can't use
+*** Things that give you 
+** Monster to fight
+** Traps (leaving traps for others?)
+** Mentor figures?
+** Damsels in distress?
+** Missions/Goals Start
+** Progression points for missions/goals (could be just more items)
+** Other Players
+*** NPC
+*** PC
+** Choices?
+** Plot?
+** Power ups
+** Race/Class analoges?
+** Curses
+* 4sq Specific Things
+** Checkins
+*** Current
+*** Past
+** Points (Weekly)
+** Badges
+*** Hilarious tie ins (attacked by bratty kids iff have babysitter badge)
+** Friends
+*** Social components
+*** Call for help
+*** Lay traps?
+** Other people who are at places
+*** Potentially ask for help
+*** Obstacles/monsters?
+*** Popularity of place modifies algorithms for generating events
+*** NPCs
+*** Scripted events/locale attributes for certain pop 
+**** 10+ makes it a village?
+**** 1 person is a thief?
+** Tips?
+** Locations as setting
+*** Color
+*** Class/Progression points for different checkin profiles
+*** TODO Research 4sq's categorization
+** Bidding mechancis?
+** Avoid having 
+** PLace for color
+** Progression
+** Badge/Talent Tree System
+** Weighting for spins
+* Tech
+** Mobile-friendly website
+** Simplest possible UI (HTML+JS)
+** Python backend
+** Django? Web.py?
+** MySQL Pesistance
+*** Simple
+*** Might be sexier to use NoSQL, but this is proof of concept
+*** Game data could be here or in JSON/XML
+** TODO Get domain name
+** TODO App engine vs EC2
+** Visual representation of algorithm
+* Pitch
