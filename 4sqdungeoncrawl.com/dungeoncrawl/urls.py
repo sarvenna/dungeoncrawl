@@ -4,6 +4,8 @@ from django.conf.urls.defaults import *
 from django.contrib import admin
 admin.autodiscover()
 
+from dc import views
+
 urlpatterns = patterns('',
     # Example:
     # (r'^dungeoncrawl/', include('dungeoncrawl.foo.urls')),
