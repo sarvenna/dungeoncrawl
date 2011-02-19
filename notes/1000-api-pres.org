@@ -1,0 +1,38 @@
+* 4sq API History
+** Made for iPhone
+** Not inteded for public consumption
+** Public in Nov 2009
+** Rethought in 2010
+** Dogfooded; use own apis for their apps
+* Iten
+** 10:30: Elevator Pitches
+** Workshops at 11 AM and 1 PM
+* API v2 Overview
+** Check in to places
+** Friend finding
+** Game and Diary
+*** Mayorships etc
+** API can do everything that he phone can do
+** Beerby
+** Track payments as you checkin
+** Gifi -- leave money
+** Instagram
+** Rock Paper Scissors Game
+** Jukebox control at a bar
+** Locative TODOs
+** History Maps
+** Heat Trackers
+** Zagat & Suggestion
+** Silly Games
+** developer.foursquare.com
+*** key piece is the list of endpoints
+*** "Try it out" buttons
+*** OAuth token
+** Sample Push API
+** Dineavor
+** Itenerary Apps
+** urban planning app
+** SXSW trending
+** Badge helper
+** Animated Heatmap, Sentement Analysis
+** 
