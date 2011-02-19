@@ -18,9 +18,9 @@ urlpatterns = patterns('',
     (r'^admin/', include(admin.site.urls)),
 
     # Callback URL for 4sq API calls
-    (r'^callback', include(dc.views.foursquare_callback)),
+    (r'^callback', 'dc.views.foursquare_callback'),
 
     # Callback URL for 4sq API calls
-    (r'', include(dc.views.index)),
+    (r'', 'dc.views.index'),
 
 )
