@@ -20,7 +20,7 @@ ATTRIBUTE_CHOICES = [
 # Create your models here.
 class Player(models.Model):
     """Basic data universal to all players"""
-    foursquare_id = models.TextField()
+    foursquare_id = models.CharField(max_length=200)
     access_token = models.TextField()
 
 class PlayerAttributes(models.Model):
@@ -46,12 +46,19 @@ class PlayerInventory(models.Model):
     item_type = models.ForeignKey(ItemType)
     count = models.IntegerField()
 
+class GiftBox(models.Model):
+    """An item left by a specific player at a location for pickup by friends"""
+    venue_id = models.CharField(max_length=100)
+    item_type = models.ForeignKey(ItemType)
+    count = models.IntegerField()
+
 class MonsterType(models.Model):
     """Categories of monsters.
 
     This stores all the information needed to create a specific monster
     for a specific encounter."""
     name = models.CharField(max_length=100)
+    image_url = models.CharField(max_length=100)
     flavor_text = models.TextField()
     min_level = models.IntegerField()
     max_level = models.IntegerField()
