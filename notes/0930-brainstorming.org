@@ -13,6 +13,8 @@
 *** Perhaps a way for higher level and lower level characters to "play together" eventually.
 ** Damsels in distress?
 ** Missions/Goals Start
+*** Visit a place you haven't been to in a while yet still are in the area of (don't want to give someone who has moved from Chicago to Seattle a quest to go back to their favorite bar in Chicago)
+*** Try a "new" restaurant/bar/whatever
 ** Progression points for missions/goals (could be just more items)
 ** Other Players
 *** NPC
