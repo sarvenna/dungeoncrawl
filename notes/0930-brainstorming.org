@@ -8,9 +8,9 @@
 *** Things that give you 
 ** Monster to fight
 ** Traps (leaving traps for others?)
-***Traps should be left by players for other specific players, to not discourage new players by getting hit by a stranger.  Positive interactions only from strangers, negative interactions Munchkin style from friends.
+*** Traps should be left by players for other specific players, to not discourage new players by getting hit by a stranger.  Positive interactions only from strangers, negative interactions Munchkin style from friends.
 ** Mentor figures?
-***Perhaps a way for higher level and lower level characters to "play together" eventually.
+*** Perhaps a way for higher level and lower level characters to "play together" eventually.
 ** Damsels in distress?
 ** Missions/Goals Start
 ** Progression points for missions/goals (could be just more items)
