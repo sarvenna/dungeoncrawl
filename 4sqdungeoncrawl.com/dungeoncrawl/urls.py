@@ -14,4 +14,11 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     (r'^admin/', include(admin.site.urls)),
+
+    # Callback URL for 4sq API calls
+    (r'^callback', include(dc.views.foursquare_callback)),
+
+    # Callback URL for 4sq API calls
+    (r'', include(dc.views.index)),
+
 )
