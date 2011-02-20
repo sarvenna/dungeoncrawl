@@ -18,12 +18,12 @@ import simplejson
 VERSION = '0.7'
 
 class FoursquareAuthHelper(object):
-    _consumer_key = ''
-    _consumer_secret = ''
+    _consumer_key = 'OHJ0AZ45PZCF4JTTGADRUCGLWNISXIGQ5BITLO0XS12ZFZGG'
+    _consumer_secret = '4BJGM2G3XX3RI22H4WGCRGHE0BRNGR0YEVLKLXFTUYRDGLEJ'
     
     _access_token_url = 'https://foursquare.com/oauth2/access_token'
     _authentication_url = 'https://foursquare.com/oauth2/authenticate'
-    _oauth_callback_uri = ''
+    _oauth_callback_uri = 'http://4sqdungeoncrawl.com/callback'
     
     API_URL = 'https://api.foursquare.com/v2/'
     
