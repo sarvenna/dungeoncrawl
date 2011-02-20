@@ -15,6 +15,7 @@ ATTRIBUTE_CHOICES = [
     ('bar', 'Alcoholic'),
     ('smart', 'Smart'),
     ('college', 'Collegiate'),
+    ('all','All Attributes'),
 ]
 
 # Create your models here.
@@ -36,10 +37,10 @@ class ItemType(models.Model):
     Each item should contain an item type which handles all data
     commmon to any items of this type."""
     name = models.CharField(max_length=100)
-    image_url = models.CharField(max_length=100)
-    flavor_text = models.TextField()
-    effect = models.TextField() # JSON encoding of effects
-    value = models.IntegerField()
+    image_url = models.CharField(max_length=100,blank=True)
+    flavor_text = models.TextField(blank=True)
+    effect = models.TextField(blank=True) # JSON encoding of effects
+    value = models.IntegerField(blank=True)
     attribute_type = models.CharField(max_length=20, choices=ATTRIBUTE_CHOICES)
 
 class PlayerInventory(models.Model):
@@ -60,8 +61,8 @@ class MonsterType(models.Model):
     This stores all the information needed to create a specific monster
     for a specific encounter."""
     name = models.CharField(max_length=100)
-    image_url = models.CharField(max_length=100)
-    flavor_text = models.TextField()
+    image_url = models.CharField(max_length=100,blank=True)
+    flavor_text = models.TextField(blank=True)
     min_level = models.IntegerField()
     max_level = models.IntegerField()
     attribute_type = models.CharField(max_length=20, choices=ATTRIBUTE_CHOICES)
