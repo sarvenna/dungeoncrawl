@@ -40,7 +40,7 @@ class ItemType(models.Model):
     image_url = models.CharField(max_length=100,blank=True)
     flavor_text = models.TextField(blank=True)
     effect = models.TextField(blank=True) # JSON encoding of effects
-    value = models.IntegerField(blank=True)
+    value = models.IntegerField(blank=True,default=0)
     attribute_type = models.CharField(max_length=20, choices=ATTRIBUTE_CHOICES)
 
 class PlayerInventory(models.Model):
