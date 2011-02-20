@@ -8,7 +8,7 @@ ATTRIBUTE_CHOICES = [
     ('shop', 'Shopaholic'),
     ('fashion', 'Fashionista'),
     ('travel', 'Jet Setter'),
-    ('mta', 'Commuter'),
+    ('mta', 'Yuppie'),
     ('outdoor', 'Outdoorsy'),
     ('zen', 'Zen'),
     ('party', 'Party Animal'),
@@ -17,6 +17,8 @@ ATTRIBUTE_CHOICES = [
     ('college', 'Collegiate'),
     ('all','All Attributes'),
 ]
+
+ITEM_CLASSES = (('junk', 'Junk'), ('mod', 'Modifier'))
 
 # Create your models here.
 class Player(models.Model):
@@ -42,6 +44,8 @@ class ItemType(models.Model):
     effect = models.TextField(blank=True) # JSON encoding of effects
     value = models.IntegerField(blank=True,default=0)
     attribute_type = models.CharField(max_length=20, choices=ATTRIBUTE_CHOICES)
+    item_class = models.CharField(max_length=5, choices=ITEM_CLASSES,
+                                  db_index=True)
 
 class PlayerInventory(models.Model):
     """The player's inventory of items."""
